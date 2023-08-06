@@ -19,7 +19,6 @@ void Game::init(const char* title, int x, int y, int w, int h, int flags) {
 		if (gWindow != NULL) {
 			// create renderer
 			gRenderer = SDL_CreateRenderer(gWindow, -1, 0);
-			ren2 = SDL_CreateRenderer(gWindow, -1, 0);
 
 			isRunning = SDL_TRUE;
 		}
