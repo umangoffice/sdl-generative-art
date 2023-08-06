@@ -5,7 +5,6 @@
 
 SDL_Window* gWindow = nullptr;
 SDL_Renderer* gRenderer = nullptr;
-SDL_Renderer* ren2 = nullptr;
 
 SDL_Point* current = nullptr;
 
