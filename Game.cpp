@@ -1,7 +1,7 @@
 #include "Game.h"
-#include "ExternDecl.h"
 #include <time.h>
 #include <random>
+using namespace std;
 
 SDL_Window* gWindow = nullptr;
 SDL_Renderer* gRenderer = nullptr;
