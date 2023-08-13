@@ -60,14 +60,10 @@ void Game::render() {
 	//------------------------
 	SDL_Delay(200);
 
-	for (int count = 0; count < group_of_points.size(); count++) {
-		SDL_RenderDrawPoint(gRenderer, group_of_points[count]->x, group_of_points[count]->y);
-	}
-
 	SDL_SetRenderDrawColor(gRenderer, 0, 188, 227, 1);
 
-	for (int count = 0; count < (group_of_points.size() - 1); count++) {
-		for (int index = 0; index < count; index++) {
+	for (int count = 0; count < group_of_points.size(); count++) {
+		for (int index = count; index > 0; index--) {
 			SDL_RenderDrawLine(gRenderer, group_of_points[count]->x, group_of_points[count]->y, group_of_points[index]->x, group_of_points[index]->y);
 		}
 	}
